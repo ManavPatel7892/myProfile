@@ -1,0 +1,8 @@
+[build]
+  publish = "public"  # The directory to deploy, adjust this to your public directory
+  command = "composer install && composer run-script build"  # Adjust this to your build command
+
+[[redirects]]
+  from = "/*"
+  to = "/profile.php"
+  status = 200
